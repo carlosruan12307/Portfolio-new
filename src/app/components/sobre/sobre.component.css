@@ -1,0 +1,16 @@
+.line{
+  border: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #7733FF 70%, #F7A21E 30%);
+
+  margin: 10px 0 0 0px
+
+}
+.container-sobre{
+  display: flex;
+flex-direction: column;
+}
+h2{
+  align-self: flex-end;
+}

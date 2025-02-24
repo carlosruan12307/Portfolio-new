@@ -1,11 +1,23 @@
-.container-resumo{
-  height: 100%;
+.container-sobre{
+
   display: flex;
   position: relative;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+
+}
+.sobre{
+  width: 50%;
+  align-self: self-start;
+}
+.container-resumo{
+  height: 100%;
+  width: 100%;
+  display: flex;
   margin: 25px 0px;
+  justify-content: space-around;
+  align-items: center;
 }
 .resumoButtonsContainer{
   margin-left: 180px;
@@ -42,7 +54,7 @@ img{
   position: static;
  }
 
- .container-resumo{
+ .container-sobre{
   position: static;
   align-items: center;
  }

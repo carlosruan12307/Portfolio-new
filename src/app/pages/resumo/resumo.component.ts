@@ -2,10 +2,11 @@ import { CommonModule, Location } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import Typewriter from 'typewriter-effect/dist/core';
 import { ButtonHeaderComponent } from "../../components/button-header/button-header.component";
+import { SobreComponent } from "../../components/sobre/sobre.component";
 @Component({
   selector: 'app-resumo',
   standalone: true,
-  imports: [CommonModule, ButtonHeaderComponent],
+  imports: [CommonModule, ButtonHeaderComponent, SobreComponent],
   templateUrl: './resumo.component.html',
   styleUrl: './resumo.component.css'
 })
@@ -15,7 +16,7 @@ export class ResumoComponent implements OnInit,AfterViewInit  {
   @ViewChild("typewriter") t: ElementRef | undefined;
   activeRoute : string = "/"
   activeButtonIndex: number | null = null;
-    list: {textButton: string,route: string,class: string}[] = [{textButton : "Sobre Min",route: "/",class: "buttonResumo"},{textButton : "Contate-me",route: "/projetos",class: "buttonResumo"}]
+    list: {textButton: string,route: string,class: string}[] = [{textButton : "Veja Mais",route: "/",class: "buttonResumo"},{textButton : "Contate-me",route: "/projetos",class: "buttonResumo"}]
 constructor(private routePath  : Location){
 
 }
