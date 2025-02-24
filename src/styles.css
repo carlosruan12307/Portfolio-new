@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  background-color: #24272C;
+  display: flex;
+  justify-content: center;
+}
+app-root{
+  height: 100%; display: flex; flex-direction: column;
+  background-color: #232732;
+  border-top: 4px solid rgba(0, 0, 0, 0.089);
+  border-left: 4px solid rgba(0, 0, 0, 0.089);
+  border-radius: 50px;
+  box-shadow: -4px -4px 4px -2px rgba(0, 0, 0, 0.089),4px 4px 5px -4px rgba(255, 255, 255, 0.041);
+  color: white;
+}

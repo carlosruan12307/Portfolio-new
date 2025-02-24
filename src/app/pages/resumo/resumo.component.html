@@ -1,0 +1,11 @@
+<div class="container-resumo">
+  <img src="me.png" alt="" />
+  <div class="container">
+    <p class="typewriter" (click)="click()" #typewriter id="typewriter"></p>
+  </div>
+  <div class="resumoButtonsContainer">
+
+    <app-button-header *ngFor="let item of list;let i = index "  (click)="onButtonClick(i)" [isActive]="activeButtonIndex === i " [object]="item"  routerLinkActive="buttonHeader_hover"></app-button-header>
+  </div>
+</div>
+
